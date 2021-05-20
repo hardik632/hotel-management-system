@@ -28,7 +28,7 @@
              {
 
       			%>
-                <jsp:forward page="index.html"></jsp:forward>
+                <jsp:forward page="index2.html"></jsp:forward>
             	<%
              }
              else

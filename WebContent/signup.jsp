@@ -17,10 +17,10 @@
             String password =request.getParameter("pass");
             String email =request.getParameter("email");
             String phonevarchar =request.getParameter("phoneno");
-            String birthdate =request.getParameter("dob");
+
     		Class.forName("com.mysql.jdbc.Driver");
     		Connection cn = DriverManager.getConnection("jdbc:mysql://localhost:3306/webapp","root","root");
-    	    String s = "insert into signup values(?,?,?,?,?)";
+    	    String s = "insert into signup values(?,?,?,?)";
             
             PreparedStatement p = cn.prepareStatement(s);
              
@@ -28,7 +28,7 @@
              p.setString(2,password);
              p.setString(3,email);
              p.setString(4,phonevarchar);
-             p.setString(5,birthdate);
+
         
         
              int i = p.executeUpdate();
