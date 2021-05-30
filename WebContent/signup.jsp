@@ -50,7 +50,7 @@
 	}
 	catch(Exception ex){
 	%>
-	<%
+	<% ex.printStackTrace();
 	out.println("Something went wrong please try again.");
 	}
 	%>
